@@ -1,0 +1,305 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+.page-header {
+    background: url('images/headphones_hero_1.jpg') no-repeat center center/cover; /* Replace with your header background image path */
+    background-size: 1400px 800px; /* Set the size of the background image */
+    color: white;
+    padding: 15px 0;
+    height: 800px; /* Ensure the header has enough height for the image */
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo-container {
+    z-index: 1;
+}
+
+.logo {
+    max-height: 50px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/* Menu Icon */
+.menu-icon {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Hide the checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero-heading {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.hero-subheading {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.hero-description {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+/* Sections */
+.section {
+    padding: 50px 0;
+}
+
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.content-boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.content-box {
+    position: relative;
+    flex: 1 1 200px; /* Adjust as needed */
+    padding: 20px;
+    margin: 10px;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+.result-background {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* Maintain aspect ratio (1:1 for a square) */
+    overflow: hidden;
+}
+
+.result-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire space */
+}
+
+.content-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.content-name {
+    font-weight: bold;
+    font-size: 1.5em; /* Adjust font size as needed */
+}
+
+.content-overlay p {
+    margin: 5px 0;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact .input-container {
+    margin-bottom: 20px;
+}
+
+.contact .input-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact textarea {
+    resize: vertical;
+}
+
+.contact button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media .icon {
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+.logo-container {
+    margin-bottom: 10px;
+}
+
+/* What We Do Section */
+.what-we-do-section {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.wwd-section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.wwd-section-header h2 {
+    font-size: 2em;
+}
+
+.wwd-section-subheader {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.wwd-content-box {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1 1 250px;
+}
+
+.wwd-icon {
+    font-size: 3em;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.content-name {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
